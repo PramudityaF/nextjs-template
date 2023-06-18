@@ -83,7 +83,7 @@ And then, create a couple config files:
 <details>
     <summary><b>tailwind.config.json</b></summary>
 
-```json
+```js
 const { fontFamily } = require("tailwindcss/defaultTheme")
 
 /** @type {import('tailwindcss').Config} */
@@ -175,7 +175,7 @@ module.exports = {
 <details>
     <summary><b>prettier.config.json</b></summary>
 
-```json
+```js
 /** @type {import("@ianvs/prettier-plugin-sort-imports").PrettierConfig} */
 module.exports = {
     endOfLine: 'lf',
@@ -278,7 +278,7 @@ module.exports = {
 
 Lastly, copy the components and lib folder to your project and customize the theming through the globals.css. Your file structure should look like this:
 
-```json
+```
 📁 my-app
 ├─ 📁 node_modules
 ├─ 📁 public
