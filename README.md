@@ -62,7 +62,6 @@ And then, create a couple config files:
     <summary><b>tsconfig.json</b></summary>
 
 ```json
-// ...
 
 "paths": {
     "@/*": ["./src/*"],
@@ -75,7 +74,6 @@ And then, create a couple config files:
 	"@/hooks/*": ["./src/hooks/*"],
 }
 
-// ...
 ```
 
 </details>
@@ -167,7 +165,6 @@ module.exports = {
     },
     plugins: [require("tailwindcss-animate")],
 }
-
 ```
 
 </details>
@@ -178,39 +175,38 @@ module.exports = {
 ```js
 /** @type {import("@ianvs/prettier-plugin-sort-imports").PrettierConfig} */
 module.exports = {
-    endOfLine: 'lf',
+    endOfLine: "lf",
     printWidth: 80,
     tabWidth: 4,
-    trailingComma: 'all',
+    trailingComma: "all",
     singleQuote: false,
     semi: false,
     // This plugin's options
     importOrder: [
-        '^(react/(.*)$)|^(react$)',
-        '^(next/(.*)$)|^(next$)',
-        '<THIRD_PARTY_MODULES>',
-        '',
-        '^types$',
-        '^@/types/(.*)$',
-        '^@/config/(.*)$',
-        '^@/lib/(.*)$',
-        '^@/hooks/(.*)$',
-        '^@/ui/(.*)$',
-        '^@/components/(.*)$',
-        '^@/styles/(.*)$',
-        '^@/app/(.*)$',
-        '',
-        '^[./]',
+        "^(react/(.*)$)|^(react$)",
+        "^(next/(.*)$)|^(next$)",
+        "<THIRD_PARTY_MODULES>",
+        "",
+        "^types$",
+        "^@/types/(.*)$",
+        "^@/config/(.*)$",
+        "^@/lib/(.*)$",
+        "^@/hooks/(.*)$",
+        "^@/ui/(.*)$",
+        "^@/components/(.*)$",
+        "^@/styles/(.*)$",
+        "^@/app/(.*)$",
+        "",
+        "^[./]",
     ],
     importOrderSeparation: false,
     importOrderSortSpecifiers: true,
     importOrderMergeDuplicateImports: true,
     importOrderCombineTypeAndValueImports: true,
     importOrderBuiltinModulesToTop: true,
-    importOrderParserPlugins: ['typescript', 'jsx', 'decorators-legacy'],
-    importOrderTypeScriptVersion: '5.0.0',
-};
-
+    importOrderParserPlugins: ["typescript", "jsx", "decorators-legacy"],
+    importOrderTypeScriptVersion: "5.0.0",
+}
 ```
 
 </details>
@@ -255,7 +251,6 @@ module.exports = {
     <summary><b>package.json</b></summary>
 
 ```json
-//...
 
   "scripts": {
     "dev": "next dev",
@@ -269,7 +264,6 @@ module.exports = {
     "format:check": "prettier --check \"**/*.{ts,tsx,mdx}\" --cache"
   },
 
-//...
 ```
 
 </details>
